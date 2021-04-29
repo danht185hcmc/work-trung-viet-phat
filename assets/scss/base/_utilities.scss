@@ -1,0 +1,7 @@
+.bg-light-gray {
+  background-color: lightgray;
+
+  @include screen('pc') {
+    background-color: lightgray + 30;
+  }
+}
