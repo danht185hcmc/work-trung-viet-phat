@@ -1,0 +1,11 @@
+@keyframes pulse {
+  0% {
+    @include size(70px);
+  }
+  50% {
+    @include size(65px);
+  }
+  100% {
+    @include size(70px);
+  }
+}

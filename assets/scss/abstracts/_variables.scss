@@ -8,6 +8,9 @@ $color: (
   'red': (
     primary: #f00,
   ),
+  'blue': (
+    primary: #1182fc,
+  ),
   brand: (
     primary: #f00,
   ),
@@ -65,6 +68,7 @@ $breakpoint: (
 $color-black: map-deep-get($color, 'black', 'primary');
 $color-white: map-deep-get($color, 'white', 'primary');
 $color-red: map-deep-get($color, 'red', 'primary');
+$color-blue: map-deep-get($color, 'blue', 'primary');
 
 $color-primary: map-deep-get($color, 'brand', 'primary');
 $color-secondary: $color-primary - 40;
