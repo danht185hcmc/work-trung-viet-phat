@@ -12,7 +12,8 @@ $color: (
     primary: #1182fc,
   ),
   brand: (
-    primary: #f00,
+    primary: #6a8cc3,
+    secondary: #35558a,
   ),
 );
 
@@ -22,7 +23,7 @@ $typography: (
   ),
   size: (
     base: 1.5,
-    titlePage: 3.1,
+    titlePage: 2.8,
     titleCategory: 1.8,
   ),
 );
@@ -69,9 +70,13 @@ $color-black: map-deep-get($color, 'black', 'primary');
 $color-white: map-deep-get($color, 'white', 'primary');
 $color-red: map-deep-get($color, 'red', 'primary');
 $color-blue: map-deep-get($color, 'blue', 'primary');
-
 $color-primary: map-deep-get($color, 'brand', 'primary');
-$color-secondary: $color-primary - 40;
+$color-secondary: map-deep-get($color, 'brand', 'secondary');
+
+$color-font-black: $color-white;
+$color-font-white: $color-black;
+$color-font-primary: $color-white;
+$color-font-secondary: $color-white;
 
 $font-family-base: map-deep-get($typography, 'font', 'base'), Tahoma, Geneva, Verdana, sans-serif;
 $font-size-base: map-deep-get($typography, 'size', 'base') * 1rem;

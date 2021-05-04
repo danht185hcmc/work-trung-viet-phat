@@ -43,7 +43,7 @@
   @include border-radius(50%);
 
   content: '';
-  background-color: rgba($color-blue, 0.5);
+  box-shadow: 0 0 15px rgba($color-blue, 0.5);
 
   animation: pulse ease-in-out 0.8s infinite;
   z-index: 0;
