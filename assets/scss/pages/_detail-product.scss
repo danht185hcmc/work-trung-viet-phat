@@ -1,0 +1,25 @@
+.detail-product {
+  font-size: $font-size-base;
+
+  &__title-page {
+    font-size: $font-size-titlePage;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $color-primary;
+  }
+
+  &__info {
+    margin-left: 25px;
+  }
+
+  &__title-product {
+    padding: 10px 0;
+
+    color: $color-secondary;
+
+    text-transform: uppercase;
+    font-size: $font-size-titleProduct;
+  }
+}

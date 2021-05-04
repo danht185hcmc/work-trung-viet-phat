@@ -1,7 +1,7 @@
-.navbar__list, .navbar .sub-menu, .product-portfolio__title ul {
+.product-portfolio__title ul, .product-portfolio__detail, .navbar__list, .navbar .sub-menu {
   list-style: none; }
 
-.navbar__link, .product__title a, .product-portfolio__title a {
+.product-portfolio__title a, .navbar__link, .product__title a {
   text-decoration: none;
   color: inherit; }
 
@@ -26,6 +26,63 @@ html {
   font-size: 62.5%;
   line-height: 1.5;
   box-sizing: border-box; }
+
+.product-portfolio {
+  padding: 30px 15px; }
+  .product-portfolio__title {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #35558a; }
+    .product-portfolio__title h2 {
+      position: relative;
+      margin-right: 30px;
+      padding: 8px 40px;
+      padding-bottom: 8px;
+      background-color: #35558a;
+      color: #fff;
+      font-size: 1.8rem;
+      text-transform: uppercase; }
+      .product-portfolio__title h2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        bottom: 0;
+        width: 3px;
+        margin-left: 3px;
+        border: 5px solid #35558a;
+        border-top: none;
+        border-bottom: none; }
+    .product-portfolio__title ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 10px;
+      font-size: 1.6rem;
+      color: rgba(0, 0, 0, 0.7); }
+    .product-portfolio__title li:not(:last-child):after {
+      content: '';
+      margin: 0 10px;
+      border-right: 1px solid rgba(0, 0, 0, 0.7); }
+    .product-portfolio__title li:hover {
+      color: #6a8cc3; }
+  .product-portfolio__detail {
+    padding: 20px;
+    padding-top: 0;
+    font-size: 1.6rem; }
+    .product-portfolio__detail-item {
+      margin-bottom: 15px; }
+    .product-portfolio__detail-title {
+      text-transform: uppercase;
+      font-size: 2rem; }
+    .product-portfolio__detail-img {
+      display: block;
+      margin: 3rem auto; }
+    .product-portfolio__detail-procedure {
+      padding-left: 25px; }
+      .product-portfolio__detail-procedure li {
+        margin-bottom: 5px; }
 
 .ellipsis {
   white-space: nowrap;
@@ -373,7 +430,7 @@ html {
     font-size: 2.6rem; }
 
 .navbar {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   background: #6a8cc3;
   color: #fff;
   box-shadow: 0 -5px 15px #35558a; }
@@ -430,7 +487,7 @@ html {
 .footer {
   background-color: #35558a;
   color: #fff;
-  font-size: 1.5rem; }
+  font-size: 1.6rem; }
   .footer__company {
     padding: 10px 0;
     text-align: center;
@@ -508,7 +565,7 @@ html {
 
 .product {
   margin-bottom: 30px;
-  font-size: 1.5rem; }
+  font-size: 1.6rem; }
   .product__img {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -565,46 +622,20 @@ html {
       #hot-products .title h4 {
         font-size: 1em; } }
 
-.product-portfolio {
-  padding: 30px 15px; }
-  .product-portfolio__title {
-    display: flex;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #35558a; }
-    .product-portfolio__title h2 {
-      position: relative;
-      margin-right: 30px;
-      padding: 8px 40px;
-      padding-bottom: 8px;
-      background-color: #35558a;
-      color: #fff;
-      font-size: 1.8rem;
-      text-transform: uppercase; }
-      .product-portfolio__title h2::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 100%;
-        bottom: 0;
-        width: 3px;
-        margin-left: 3px;
-        border: 5px solid #35558a;
-        border-top: none;
-        border-bottom: none; }
-    .product-portfolio__title ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      margin-left: 10px;
-      font-size: 1.5rem;
-      color: rgba(0, 0, 0, 0.7); }
-    .product-portfolio__title li:not(:last-child):after {
-      content: '';
-      margin: 0 10px;
-      border-right: 1px solid rgba(0, 0, 0, 0.7); }
-    .product-portfolio__title li:hover {
-      color: #6a8cc3; }
+.detail-product {
+  font-size: 1.6rem; }
+  .detail-product__title-page {
+    font-size: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6a8cc3; }
+  .detail-product__info {
+    margin-left: 25px; }
+  .detail-product__title-product {
+    padding: 10px 0;
+    color: #35558a;
+    text-transform: uppercase;
+    font-size: 2.3rem; }
 
 .bg-light-gray {
   background-color: lightgray; }
