@@ -54,11 +54,16 @@ html {
 
     ul {
       @extend %reset-list;
-      @include flex(row, space-between, center);
 
+      display: none;
       margin-left: 10px;
+
       font-size: $font-size-base;
       color: rgba($color-black, 0.7);
+
+      @include screen('pc') {
+        @include flex(row, space-between, center);
+      }
     }
 
     li {

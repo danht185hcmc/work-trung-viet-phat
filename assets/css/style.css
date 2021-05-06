@@ -54,13 +54,16 @@ html {
         border-top: none;
         border-bottom: none; }
     .product-portfolio__title ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+      display: none;
       margin-left: 10px;
       font-size: 1.6rem;
       color: rgba(0, 0, 0, 0.7); }
+      @media (min-width: 64em) {
+        .product-portfolio__title ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center; } }
     .product-portfolio__title li:not(:last-child):after {
       content: '';
       margin: 0 10px;
@@ -413,9 +416,25 @@ html {
     padding-right: 0; }
 
 .header {
-  background-image: repeating-linear-gradient(15deg, rgba(106, 140, 195, 0.5), rgba(53, 85, 138, 0.5) 2%, rgba(106, 140, 195, 0.5) 5%); }
+  position: relative;
+  background-image: repeating-linear-gradient(15deg, rgba(106, 140, 195, 0.5), rgba(53, 85, 138, 0.5) 2%, rgba(106, 140, 195, 0.5) 5%);
+  z-index: 999; }
+  .header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: repeating-linear-gradient(15deg, #6a8cc3, #35558a 2%, #6a8cc3 5%); }
+    .header.fixed #menu-bars {
+      color: #fff; }
+    .header.fixed .header__banner {
+      display: none; }
   .header__banner {
+    display: none;
     padding: 40px; }
+    @media (min-width: 64em) {
+      .header__banner {
+        display: block; } }
   .header__banner-text {
     font-weight: bold;
     text-align: center;
@@ -429,17 +448,73 @@ html {
   .header__banner-sub {
     font-size: 2.6rem; }
 
+.footer {
+  padding: 20px;
+  background-color: #35558a;
+  color: #fff;
+  font-size: 1.6rem; }
+  .footer__company {
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em; }
+  .footer__category {
+    padding: 20px 0; }
+  .footer__category-title {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+    border-left: 2px solid #fff; }
+    .footer__category-title::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 1px;
+      background-color: #fff; }
+  .footer__category-content {
+    margin-bottom: 20px;
+    padding-left: 10px; }
+  .footer p {
+    margin-bottom: 0.5em; }
+
+#menu-bars {
+  position: relative;
+  padding: 15px;
+  font-size: 1.6rem;
+  cursor: pointer; }
+  @media (min-width: 64em) {
+    #menu-bars {
+      display: none; } }
+
 .navbar {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
   font-size: 1.6rem;
   background: #6a8cc3;
   color: #fff;
   box-shadow: 0 -5px 15px #35558a; }
+  @media (min-width: 64em) {
+    .navbar {
+      position: relative;
+      display: block; } }
   .navbar__list {
     display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin: auto;
-    padding: 0 10px; }
+    flex-direction: column;
+    margin: auto; }
+    @media (min-width: 64em) {
+      .navbar__list {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        padding: 0 10px; } }
   .navbar__item {
     position: relative;
     flex-grow: 1;
@@ -483,39 +558,6 @@ html {
       font-size: 1em;
       font-weight: 600;
       line-height: 1.5; }
-
-.footer {
-  background-color: #35558a;
-  color: #fff;
-  font-size: 1.6rem; }
-  .footer__company {
-    padding: 10px 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.5em; }
-  .footer__category {
-    padding: 20px 0; }
-  .footer__category-title {
-    position: relative;
-    margin-bottom: 15px;
-    padding-left: 10px;
-    padding-top: 5px;
-    text-transform: uppercase;
-    font-size: 1em;
-    border-left: 2px solid #fff; }
-    .footer__category-title::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 60px;
-      height: 1px;
-      background-color: #fff; }
-  .footer__category-content {
-    margin-bottom: 20px;
-    padding-left: 10px; }
-  .footer p {
-    margin-bottom: 0.5em; }
 
 #back-to-top .aside__control {
   margin-top: 20px; }

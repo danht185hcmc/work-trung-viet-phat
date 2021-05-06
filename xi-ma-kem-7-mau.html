@@ -21,7 +21,7 @@
 
   <body>
     <div id="main">
-      <header class="header">
+      <header id="header" class="header">
         <div class="grid wide">
           <div class="header__banner">
             <div class="header__banner-text">
@@ -33,8 +33,6 @@
               </p>
             </div>
           </div>
-
-          <div class="header__contact"></div>
         </div>
 
         <nav class="navbar">
@@ -51,7 +49,11 @@
 
                 <ul class="sub-menu">
                   <li><a href="#" class="navbar__link">Trắng xanh Cr3+</a></li>
-                  <li><a href="#" class="navbar__link">7 màu</a></li>
+                  <li>
+                    <a href="./xi-ma-kem-7-mau.html" class="navbar__link"
+                      >7 màu</a
+                    >
+                  </li>
                   <li><a href="#" class="navbar__link">7 màu 3+</a></li>
                   <li><a href="#" class="navbar__link">Đen AB</a></li>
                   <li><a href="#" class="navbar__link">Oliu</a></li>
@@ -90,293 +92,322 @@
             </ul>
           </div>
         </nav>
+
+        <div id="menu-bars" onclick="toggleMenu()">
+          <span class="fas fa-bars"></span>
+        </div>
       </header>
-    </div>
 
-    <main>
-      <section class="detail-product">
-        <div class="grid wide">
-          <h1 class="detail-product__title-page">Thông tin chi tiết</h1>
+      <main>
+        <section class="detail-product">
+          <div class="grid wide">
+            <h1 class="detail-product__title-page">Thông tin chi tiết</h1>
 
-          <div class="row">
-            <div class="col-l-4">
-              <img src="/assets/img/products/demo.jpg" alt="" />
-            </div>
+            <div class="row">
+              <div class="col-l-4">
+                <img src="/assets/img/products/demo.jpg" alt="" />
+              </div>
 
-            <div class="col-l-8">
-              <div class="detail-product__info">
-                <h4 class="detail-product__title-product">Xi mạ kẽm 7 màu</h4>
-                <p>
-                  Xi mạ kẽm 7 màu là sau khi trải qua quá trình xử lí bề mặt kim
-                  loại, phủ lên bề mặt kim loại một lớp kẽm màu do qua lớp thụ
-                  động crom, làm cho sản phẩm, và chống bị gỉ sét và sử dụng lâu
-                  bền với thời gian.
-                </p>
+              <div class="col-l-8">
+                <div class="detail-product__info">
+                  <h4 class="detail-product__title-product">Xi mạ kẽm 7 màu</h4>
+                  <p>
+                    Xi mạ kẽm 7 màu là sau khi trải qua quá trình xử lí bề mặt
+                    kim loại, phủ lên bề mặt kim loại một lớp kẽm màu do qua lớp
+                    thụ động crom, làm cho sản phẩm, và chống bị gỉ sét và sử
+                    dụng lâu bền với thời gian.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="product-portfolio">
-        <div class="grid wide">
-          <div class="product-portfolio__title">
-            <h2>Thông tin sản phẩm</h2>
+        <section class="product-portfolio">
+          <div class="grid wide">
+            <div class="product-portfolio__title">
+              <h2>Thông tin sản phẩm</h2>
+            </div>
+
+            <ul class="product-portfolio__detail">
+              <li class="product-portfolio__detail-item">
+                <h4 class="product-portfolio__detail-title">
+                  Xi mạ kẽm 7 màu là gì?
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque reiciendis eius quam? Voluptates incidunt mollitia
+                  maiores eveniet nostrum? Dolores aut facilis enim soluta
+                  assumenda ducimus quaerat minus harum qui tenetur.
+                </p>
+                <img
+                  class="product-portfolio__detail-img"
+                  src="./assets/img/products/demo.jpg"
+                  alt=""
+                />
+              </li>
+              <li class="product-portfolio__detail-item">
+                <h4 class="product-portfolio__detail-title">
+                  Tại sao nên mạ kẽm 7 màu?
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati dicta magnam suscipit reiciendis ex, dignissimos,
+                  minus atque nihil adipisci ab officia vel illo voluptate, at
+                  recusandae? Mollitia fugiat similique magnam.
+                </p>
+              </li>
+              <li class="product-portfolio__detail-item">
+                <h4 class="product-portfolio__detail-title">
+                  Quy trình mạ kẽm 7 màu:
+                </h4>
+
+                <ol class="product-portfolio__detail-procedure">
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure officia reiciendis harum excepturi eveniet tenetur
+                    nulla adipisci consectetur atque aliquid inventore
+                    perferendis, explicabo ea libero! Perspiciatis, dolor! Vero,
+                    asperiores odio!
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure officia reiciendis harum excepturi eveniet tenetur
+                    nulla adipisci consectetur atque aliquid inventore
+                    perferendis, explicabo ea libero! Perspiciatis, dolor! Vero,
+                    asperiores odio!
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure officia reiciendis harum excepturi eveniet tenetur
+                    nulla adipisci consectetur atque aliquid inventore
+                    perferendis, explicabo ea libero! Perspiciatis, dolor! Vero,
+                    asperiores odio!
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure officia reiciendis harum excepturi eveniet tenetur
+                    nulla adipisci consectetur atque aliquid inventore
+                    perferendis, explicabo ea libero! Perspiciatis, dolor! Vero,
+                    asperiores odio!
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure officia reiciendis harum excepturi eveniet tenetur
+                    nulla adipisci consectetur atque aliquid inventore
+                    perferendis, explicabo ea libero! Perspiciatis, dolor! Vero,
+                    asperiores odio!
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure officia reiciendis harum excepturi eveniet tenetur
+                    nulla adipisci consectetur atque aliquid inventore
+                    perferendis, explicabo ea libero! Perspiciatis, dolor! Vero,
+                    asperiores odio!
+                  </li>
+                  <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iure officia reiciendis harum excepturi eveniet tenetur
+                    nulla adipisci consectetur atque aliquid inventore
+                    perferendis, explicabo ea libero! Perspiciatis, dolor! Vero,
+                    asperiores odio!
+                  </li>
+                </ol>
+
+                <img
+                  src="./assets/img/products/demo.jpg"
+                  alt=""
+                  class="product-portfolio__detail-img"
+                />
+              </li>
+              <li class="product-portfolio__detail-item">
+                <h4 class="product-portfolio__detail-title">
+                  Ứng dụng việc xi mạ kẽm 7 màu
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque reiciendis eius quam? Voluptates incidunt mollitia
+                  maiores eveniet nostrum? Dolores aut facilis enim soluta
+                  assumenda ducimus quaerat minus harum qui tenetur.
+                </p>
+                <img
+                  class="product-portfolio__detail-img"
+                  src="./assets/img/products/demo.jpg"
+                  alt=""
+                />
+              </li>
+              <li class="product-portfolio__detail-item">
+                <h4 class="product-portfolio__detail-title">
+                  Lợi ích khi xi mạ kẽm 7 màu
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Itaque reiciendis eius quam? Voluptates incidunt mollitia
+                  maiores eveniet nostrum? Dolores aut facilis enim soluta
+                  assumenda ducimus quaerat minus harum qui tenetur.
+                </p>
+              </li>
+            </ul>
           </div>
+        </section>
+      </main>
 
-          <ul class="product-portfolio__detail">
-            <li class="product-portfolio__detail-item">
-              <h4 class="product-portfolio__detail-title">
-                Xi mạ kẽm 7 màu là gì?
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                reiciendis eius quam? Voluptates incidunt mollitia maiores
-                eveniet nostrum? Dolores aut facilis enim soluta assumenda
-                ducimus quaerat minus harum qui tenetur.
-              </p>
-              <img
-                class="product-portfolio__detail-img"
-                src="./assets/img/products/demo.jpg"
-                alt=""
-              />
-            </li>
-            <li class="product-portfolio__detail-item">
-              <h4 class="product-portfolio__detail-title">
-                Tại sao nên mạ kẽm 7 màu?
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati dicta magnam suscipit reiciendis ex, dignissimos,
-                minus atque nihil adipisci ab officia vel illo voluptate, at
-                recusandae? Mollitia fugiat similique magnam.
-              </p>
-            </li>
-            <li class="product-portfolio__detail-item">
-              <h4 class="product-portfolio__detail-title">
-                Quy trình mạ kẽm 7 màu:
-              </h4>
-
-              <ol class="product-portfolio__detail-procedure">
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  officia reiciendis harum excepturi eveniet tenetur nulla
-                  adipisci consectetur atque aliquid inventore perferendis,
-                  explicabo ea libero! Perspiciatis, dolor! Vero, asperiores
-                  odio!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  officia reiciendis harum excepturi eveniet tenetur nulla
-                  adipisci consectetur atque aliquid inventore perferendis,
-                  explicabo ea libero! Perspiciatis, dolor! Vero, asperiores
-                  odio!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  officia reiciendis harum excepturi eveniet tenetur nulla
-                  adipisci consectetur atque aliquid inventore perferendis,
-                  explicabo ea libero! Perspiciatis, dolor! Vero, asperiores
-                  odio!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  officia reiciendis harum excepturi eveniet tenetur nulla
-                  adipisci consectetur atque aliquid inventore perferendis,
-                  explicabo ea libero! Perspiciatis, dolor! Vero, asperiores
-                  odio!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  officia reiciendis harum excepturi eveniet tenetur nulla
-                  adipisci consectetur atque aliquid inventore perferendis,
-                  explicabo ea libero! Perspiciatis, dolor! Vero, asperiores
-                  odio!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  officia reiciendis harum excepturi eveniet tenetur nulla
-                  adipisci consectetur atque aliquid inventore perferendis,
-                  explicabo ea libero! Perspiciatis, dolor! Vero, asperiores
-                  odio!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  officia reiciendis harum excepturi eveniet tenetur nulla
-                  adipisci consectetur atque aliquid inventore perferendis,
-                  explicabo ea libero! Perspiciatis, dolor! Vero, asperiores
-                  odio!
-                </li>
-              </ol>
-
-              <img
-                src="./assets/img/products/demo.jpg"
-                alt=""
-                class="product-portfolio__detail-img"
-              />
-            </li>
-            <li class="product-portfolio__detail-item">
-              <h4 class="product-portfolio__detail-title">
-                Ứng dụng việc xi mạ kẽm 7 màu
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                reiciendis eius quam? Voluptates incidunt mollitia maiores
-                eveniet nostrum? Dolores aut facilis enim soluta assumenda
-                ducimus quaerat minus harum qui tenetur.
-              </p>
-              <img
-                class="product-portfolio__detail-img"
-                src="./assets/img/products/demo.jpg"
-                alt=""
-              />
-            </li>
-            <li class="product-portfolio__detail-item">
-              <h4 class="product-portfolio__detail-title">
-                Lợi ích khi xi mạ kẽm 7 màu
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                reiciendis eius quam? Voluptates incidunt mollitia maiores
-                eveniet nostrum? Dolores aut facilis enim soluta assumenda
-                ducimus quaerat minus harum qui tenetur.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-
-    <aside class="aside">
-      <a href="tel:0837130808">
-        <div class="aside__control animate-pulse">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#fff"
-            viewBox="-20 -20 300 300"
-          >
-            <rect width="256" height="256" fill="none"></rect>
-            <path
-              d="M92.47629,124.81528a84.34782,84.34782,0,0,0,39.05334,38.8759,7.92754,7.92754,0,0,0,7.8287-.59231L164.394,146.40453a8,8,0,0,1,7.58966-.69723l46.837,20.073A7.97345,7.97345,0,0,1,223.619,174.077,48.00882,48.00882,0,0,1,176,216,136,136,0,0,1,40,80,48.00882,48.00882,0,0,1,81.923,32.381a7.97345,7.97345,0,0,1,8.29668,4.79823L110.31019,84.0571a8,8,0,0,1-.65931,7.53226L93.01449,117.00909A7.9287,7.9287,0,0,0,92.47629,124.81528Z"
+      <aside class="aside">
+        <a href="tel:0837130808">
+          <div class="aside__control animate-pulse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
               fill="#fff"
-              stroke="none"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></path>
-          </svg>
+              viewBox="-20 -20 300 300"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <path
+                d="M92.47629,124.81528a84.34782,84.34782,0,0,0,39.05334,38.8759,7.92754,7.92754,0,0,0,7.8287-.59231L164.394,146.40453a8,8,0,0,1,7.58966-.69723l46.837,20.073A7.97345,7.97345,0,0,1,223.619,174.077,48.00882,48.00882,0,0,1,176,216,136,136,0,0,1,40,80,48.00882,48.00882,0,0,1,81.923,32.381a7.97345,7.97345,0,0,1,8.29668,4.79823L110.31019,84.0571a8,8,0,0,1-.65931,7.53226L93.01449,117.00909A7.9287,7.9287,0,0,0,92.47629,124.81528Z"
+                fill="#fff"
+                stroke="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
+            </svg>
+          </div>
+        </a>
+
+        <a href="mailto:danht185hcmc@gmail.com">
+          <div class="aside__control animate-pulse">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#fff"
+              viewBox="-20 -20 300 300"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <path
+                d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
+                fill="none"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></path>
+              <polyline
+                points="224 56 128 144 32 56"
+                fill="none"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+        </a>
+
+        <div id="back-to-top">
+          <div class="aside__control">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#fff"
+              viewBox="0 0 256 256"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <line
+                x1="128"
+                y1="224.00373"
+                x2="128"
+                y2="72.00373"
+                fill="none"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="20"
+              ></line>
+              <polyline
+                points="56 144.004 128 72.004 200 144.004"
+                fill="none"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="20"
+              ></polyline>
+              <line
+                x1="40"
+                y1="40"
+                x2="216"
+                y2="40"
+                fill="none"
+                stroke="#fff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="20"
+              ></line>
+            </svg>
+          </div>
         </div>
-      </a>
+      </aside>
 
-      <a href="mailto:danht185hcmc@gmail.com">
-        <div class="aside__control animate-pulse">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#fff"
-            viewBox="-20 -20 300 300"
-          >
-            <rect width="256" height="256" fill="none"></rect>
-            <path
-              d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z"
-              fill="none"
-              stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></path>
-            <polyline
-              points="224 56 128 144 32 56"
-              fill="none"
-              stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="16"
-            ></polyline>
-          </svg>
+      <footer class="footer">
+        <div class="grid wide">
+          <h2 class="footer__company">
+            Công ty trách nhiệm hữu hạn xi mạ kim loại trung việt phát
+          </h2>
+
+          <div class="footer__category">
+            <ul class="row">
+              <li class="col-l-4">
+                <h3 class="footer__category-title">Thông tin công ty</h3>
+
+                <div class="footer__category-content">
+                  <p>
+                    Xưởng 1: G12/24 Láng Lê Bàu Cò, xã Lê Ninh Xuân, huyện Bình
+                    Chánh, Tp. HCM
+                  </p>
+                  <p>
+                    Xưởng 2: 17/18/30 liên khu 56, phường Bình Hưng Hoà B, quận
+                    Bình Tân, Tp. HCM
+                  </p>
+                  <p>Điện thoại : 0933.112.369</p>
+                  <p>Email : vannhan638@gmail.com</p>
+                </div>
+              </li>
+
+              <li class="col-l-4">
+                <h3 class="footer__category-title">Chính sách</h3>
+
+                <div class="footer__category-content">
+                  <p>Chính sách bảo hành</p>
+                  <p>Chính sách vận chuyển</p>
+                  <p>Chính sách tư vấn</p>
+                  <p>Chính sách bán hàng</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </a>
-
-      <div id="back-to-top">
-        <div class="aside__control">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#fff"
-            viewBox="0 0 256 256"
-          >
-            <rect width="256" height="256" fill="none"></rect>
-            <line
-              x1="128"
-              y1="224.00373"
-              x2="128"
-              y2="72.00373"
-              fill="none"
-              stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="20"
-            ></line>
-            <polyline
-              points="56 144.004 128 72.004 200 144.004"
-              fill="none"
-              stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="20"
-            ></polyline>
-            <line
-              x1="40"
-              y1="40"
-              x2="216"
-              y2="40"
-              fill="none"
-              stroke="#fff"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="20"
-            ></line>
-          </svg>
-        </div>
-      </div>
-    </aside>
-
-    <footer class="footer">
-      <div class="grid wide">
-        <h2 class="footer__company">
-          Công ty trách nhiệm hữu hạn xi mạ kim loại trung việt phát
-        </h2>
-
-        <div class="footer__category">
-          <ul class="row">
-            <li class="col-l-4">
-              <h3 class="footer__category-title">Thông tin công ty</h3>
-
-              <div class="footer__category-content">
-                <p>
-                  Xưởng 1: G12/24 Láng Lê Bàu Cò, xã Lê Ninh Xuân, huyện Bình
-                  Chánh, Tp. HCM
-                </p>
-                <p>
-                  Xưởng 2: 17/18/30 liên khu 56, phường Bình Hưng Hoà B, quận
-                  Bình Tân, Tp. HCM
-                </p>
-                <p>Điện thoại : 0933.112.369</p>
-                <p>Email : vannhan638@gmail.com</p>
-              </div>
-            </li>
-
-            <li class="col-l-4">
-              <h3 class="footer__category-title">Chính sách</h3>
-
-              <div class="footer__category-content">
-                <p>Chính sách bảo hành</p>
-                <p>Chính sách vận chuyển</p>
-                <p>Chính sách tư vấn</p>
-                <p>Chính sách bán hàng</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
+
+  <script src="./assets/js/navbar.js"></script>
+  <script>
+    var backToTop = document.getElementById('back-to-top');
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    }
+
+    function toTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+  </script>
 </html>

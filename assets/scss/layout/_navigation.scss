@@ -1,0 +1,120 @@
+#menu-bars {
+  position: relative;
+  padding: 15px;
+
+  font-size: $font-size-base;
+  cursor: pointer;
+
+  @include screen('pc') {
+    display: none;
+  }
+}
+
+.navbar {
+  position: absolute;
+  display: none;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  font-size: $font-size-base;
+
+  background: $color-primary;
+  color: $color-font-primary;
+
+  box-shadow: 0 -5px 15px $color-secondary;
+
+  @include screen('pc') {
+    position: relative;
+    display: block;
+  }
+
+  &__list {
+    @extend %reset-list;
+    @include flex(column);
+
+    margin: auto;
+
+    @include screen('pc') {
+      @include flex(row);
+      width: 80%;
+      padding: 0 10px;
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    flex-grow: 1;
+    text-align: center;
+
+    cursor: pointer;
+
+    border-left: 2px solid $color-secondary;
+
+    &:last-child {
+      border-right: 2px solid $color-secondary;
+    }
+
+    &:hover {
+      @include box-shadow(0, 0, 25px, $color-secondary, true);
+
+      .sub-menu {
+        @include transform(scaleY(1));
+      }
+    }
+  }
+
+  &__link {
+    @extend %reset-link;
+    display: block;
+
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 46px;
+
+    .icon-custom {
+      margin-left: 5px;
+    }
+  }
+
+  .sub-menu {
+    @extend %reset-list;
+    @include transform(scaleY(0));
+
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+    min-width: 120%;
+
+    background: $color-white;
+    color: $color-font-white;
+
+    z-index: 1;
+    transform-origin: top left;
+    transition: all ease-in-out 0.2s;
+
+    li {
+      &:not(:last-child) {
+        border-bottom: 2px solid rgba($color-black, 0.4);
+      }
+
+      &:hover {
+        @extend .navbar__item:hover;
+      }
+    }
+
+    a {
+      padding: 8px 15px;
+
+      text-align: left;
+      text-transform: capitalize;
+
+      font-size: 1em;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+}

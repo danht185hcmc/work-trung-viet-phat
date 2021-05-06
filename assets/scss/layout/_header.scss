@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   background-image: repeating-linear-gradient(
     15deg,
     rgba($color-primary, 0.5),
@@ -6,8 +8,37 @@
     rgba($color-primary, 0.5) 5%
   );
 
+  z-index: 999;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-image: repeating-linear-gradient(
+      15deg,
+      rgba($color-primary, 1),
+      rgba($color-secondary, 1) 2%,
+      rgba($color-primary, 1) 5%
+    );
+
+    #menu-bars {
+      color: #fff;
+    }
+
+    .header__banner {
+      display: none;
+    }
+  }
+
   &__banner {
+    display: none;
     padding: 40px;
+
+    @include screen('pc') {
+      display: block;
+    }
   }
 
   &__banner-text {
@@ -31,98 +62,5 @@
 
   &__banner-sub {
     font-size: 2.6rem;
-  }
-}
-
-.navbar {
-  font-size: $font-size-base;
-
-  background: $color-primary;
-  color: $color-font-primary;
-
-  box-shadow: 0 -5px 15px $color-secondary;
-
-  &__list {
-    @extend %reset-list;
-    @include flex(row);
-
-    width: 80%;
-    margin: auto;
-    padding: 0 10px;
-  }
-
-  &__item {
-    position: relative;
-
-    flex-grow: 1;
-    text-align: center;
-
-    cursor: pointer;
-
-    border-left: 2px solid $color-secondary;
-
-    &:last-child {
-      border-right: 2px solid $color-secondary;
-    }
-
-    &:hover {
-      @include box-shadow(0, 0, 25px, $color-secondary, true);
-
-      .sub-menu {
-        @include transform(scaleY(1));
-      }
-    }
-  }
-
-  &__link {
-    @extend %reset-link;
-    display: block;
-
-    text-transform: uppercase;
-    font-size: 1.2em;
-    line-height: 46px;
-
-    .icon-custom {
-      margin-left: 5px;
-    }
-  }
-
-  .sub-menu {
-    @extend %reset-list;
-    @include transform(scaleY(0));
-
-    position: absolute;
-
-    top: 100%;
-    left: 0;
-    min-width: 120%;
-
-    background: $color-white;
-    color: $color-font-white;
-
-    z-index: 1;
-    transform-origin: top left;
-    transition: all ease-in-out 0.2s;
-
-    li {
-      &:not(:last-child) {
-        border-bottom: 2px solid rgba($color-black, 0.4);
-      }
-
-      &:hover {
-        @extend .navbar__item:hover;
-      }
-    }
-
-    a {
-      padding: 8px 15px;
-
-      text-align: left;
-      text-transform: capitalize;
-
-      font-size: 1em;
-      font-weight: 600;
-      line-height: 1.5;
-    }
   }
 }
