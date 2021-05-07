@@ -74,7 +74,8 @@ html {
       }
 
       &:hover {
-        color: $color-primary;
+        color: $color-primary - 50;
+        font-weight: bold;
       }
     }
 

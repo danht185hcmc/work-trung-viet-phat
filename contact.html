@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIÊN HỆ</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<style>
+input.form-find {
+    height: 30px;
+}
+    h1{
+        padding-top: 20px ;
+        text-align: center;
+        font-size: 30px;
+    }
+    .form-group{
+            margin: 10px 0px;
+        }
+        .form-control{
+            width: 98%;
+            padding: 5px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+        }
+        fieldset{
+            
+            width: 97%;
+            padding: 5px;
+            outline: none;
+            border: 1px solid gray;
+            border-radius: 3px;
+        
+        }
+        .form-group label{
+            font-weight: bold;
+            font-variant: 3px;
+            font-size: larger;
+        }
+        .form-control:focus{
+            background-color: yellow;
+            box-shadow: 0 0 3px red;
+            border: 1px solid yellow;
+        }
+        .form-button{
+            padding: 8px 30px;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            background-color: white;
+            color: orangered;
+            box-shadow: inset 0 0 20px blue;
+        }
+        .form-button:hover{
+            color: blue;
+            box-shadow: inset 0 0 20px blue;
+        }
+        .form-button:disabled{
+            color: darkgray;
+            box-shadow: inset 0 0 20px gray;
+        }
+        .infor{
+            margin: 30px auto;
+            padding: 10px;
+            border: 1px solid #000;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 2px 2px gray;
+        }
+    
+
+</style>
+  
+<body>
+    <div id="main">
+        <header class="header">
+          <div class="grid wide">
+            <div class="header__banner">
+              <div class="header__banner-text">
+                <p class="header__banner-title">
+                  Công ty trách nhiệm hữu hạn trung việt phát
+                </p>
+                <p class="header__banner-sub">
+                  Gia công xi mạ kim loại và anode hoá nhôm
+                </p>
+              </div>
+            </div>
+  
+            <div class="header__contact"></div>
+          </div>
+  
+          <nav class="navbar">
+            <div class="grid wide">
+              <ul class="navbar__list">
+                <li class="navbar__item">
+                  <a href="./index.html" class="navbar__link">Trang chủ</a>
+                </li>
+                <li class="navbar__item">
+                  <span class="navbar__link">
+                    Xi mạ kẽm
+                    <span class="fas fa-caret-down icon-custom"></span>
+                  </span>
+  
+                  <ul class="sub-menu">
+                    <li><a href="./xi-ma-kem-trang-xanh.html" class="navbar__link">Trắng xanh</a></li>
+                    <li><a href="./xi-ma-kem-trang-xanh-crom-3.html" class="navbar__link">Trắng xanh Cr3+</a></li>
+                    <li><a href="./xi-ma-kem-7-mau.html" class="navbar__link">7 màu</a></li>
+                    <li><a href="./xi-ma-kem-7-mau-3+.html" class="navbar__link">7 màu 3+</a></li>
+                    <li><a href="./xi-ma-kem-den-ab.html" class="navbar__link">Đen AB</a></li>
+                    <li><a href="./xi-ma-kem-xanh-oliu.html" class="navbar__link">Oliu</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <span class="navbar__link">
+                    Nhuộm đen <span class="fas fa-caret-down icon-custom"></span>
+                  </span>
+  
+                  <ul class="sub-menu">
+                    <li><a href="./nhuom-den-kim-loai.html" class="navbar__link">Kim loại</a></li>
+                    <li><a href="./nhuom-den-ct-may-cnc.html" class="navbar__link">Chi tiết máy CNC</a></li>
+                    <li><a href="./nhuom-den-sat-thep.html" class="navbar__link">Sắt thép</a></li>
+                    <li><a href="./nhuom-den-bu-long.html" class="navbar__link">Bu-long, ốc vít</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <span class="navbar__link">
+                    Niken <span class="fas fa-caret-down icon-custom"></span>
+                  </span>
+  
+                  <ul class="sub-menu">
+                    <li><a href="./xi-ma-niken-bong.html" class="navbar__link">Niken Bóng</a></li>
+                    <li><a href="./xi-ma-niken-mo.html" class="navbar__link">Niken Mờ</a></li>
+                    <li><a href="./xi-ma-niken-chi-tiet-may-cnc.html" class="navbar__link">Niken Chi Tiết Máy CNC</a></li>
+                    <li><a href="./xi-ma-niken-crom.html" class="navbar__link">Niken Crom</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__item">
+                  <span class="navbar__link">
+                    Xi mạ đồng <span class="fas fa-caret-down icon-custom"></span>
+                  </span>
+  
+                  <ul class="sub-menu">
+                    <li><a href="./xi-ma-dong-vang.html" class="navbar__link">Xi mạ đồng vàng</a></li>
+                    <li><a href="./xi-ma-dong-do.html" class="navbar__link">Xi mạ đồng đỏ</a></li>
+                  </ul>
+                <li class="navbar__item">
+                  <a href="./anode-nhom.html" class="navbar__link"> Anode nhôm </a>
+                </li>
+                <li class="navbar__item">
+                  <a href="./crom-cung.html" class="navbar__link"> Xi mạ crom cứng </a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">Giới thiệu</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__link">Liên hệ</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <h1>VUI LÒNG ĐIỀN THÔNG TIN VÀO BÊN DƯỚI </h1> <br>
+    <h1>NHÂN VIÊN SẼ LIÊN HỆ TƯ VẤN CHO QUÝ KHÁCH</h1>
+    <form action="" class="infor">
+        <div class="form-group">
+            <label for=""> Họ và tên : </label><br>
+            <input class="form-control">
+        </div>
+
+        
+            <fieldset>
+            <legend>Sữa Chữa / Mua Bán : </legend>
+            <label for=""><input type="radio">Sữa Chữa</label>
+            <label for=""><input type="radio">Mua Bán</label>
+        </fieldset>
+   
+
+        <div class="form-group">
+            <label for=""> Số Điện Thoại : </label><br>
+            <input class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for=""> Thiết bị Cần tư Vấn : </label><br>
+            <input class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for=""> Tình trạng nếu cần sữa chữa  </label><br>
+            <input class="form-control">
+           
+        </div>
+        <div class="form-group">
+            <label for=""> Đính kèm hình ảnh  </label><br>
+            <input class="form-control" type="file">
+           
+        </div>
+
+
+        <div class="form-group">
+            <label for="">Ghi chú thêm : </label><br>
+            <textarea class="form-control" cols="30" rows="5"></textarea>
+        </div>
+        <hr>
+        <div class="form-group">
+            <button class="form-button" type="submit">Gửi</button>
+            <button class="form-button" type="button">Hủy</button>
+        </div>
+    </form>
+       
+    <footer class="footer">
+        <div class="grid wide">
+          <h2 class="footer__company">
+            Công ty trách nhiệm hữu hạn xi mạ kim loại trung việt phát
+          </h2>
+  
+          <div class="footer__category">
+            <ul class="row">
+              <li class="col-l-4">
+                <h3 class="footer__category-title">Thông tin công ty</h3>
+  
+                <div class="footer__category-content">
+                  <p>
+                    Xưởng 1: G12/24 Láng Le Bàu Cò, xã Lê Ninh Xuân, huyện Bình
+                    Chánh, Tp. HCM
+                  </p>
+                  <p>
+                    Xưởng 2: 17/18/30 liên khu 56, phường Bình Hưng Hoà B, quận
+                    Bình Tân, Tp. HCM
+                  </p>
+                  <p>Điện thoại : 0933.112.369</p>
+                  <p>Email : ximatrungvietphat@gmail.com</p>
+                </div>
+              </li>
+  
+              <li class="col-l-4">
+                <h3 class="footer__category-title">Chính sách</h3>
+  
+                <div class="footer__category-content">
+                  <p>Chính sách bảo hành</p>
+                  <p>Chính sách vận chuyển</p>
+                  <p>Chính sách tư vấn</p>
+                  <p>Chính sách bán hàng</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://uhchat.net/code.php?f=6e6fc0"></script>
+
+
+    
+</body>
+</html>

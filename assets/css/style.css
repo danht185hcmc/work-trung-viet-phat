@@ -32,13 +32,13 @@ html {
   .product-portfolio__title {
     display: flex;
     margin-bottom: 20px;
-    border-bottom: 2px solid #35558a; }
+    border-bottom: 2px solid #ac7e00; }
     .product-portfolio__title h2 {
       position: relative;
       margin-right: 30px;
       padding: 8px 40px;
       padding-bottom: 8px;
-      background-color: #35558a;
+      background-color: #ac7e00;
       color: #fff;
       font-size: 1.8rem;
       text-transform: uppercase; }
@@ -50,7 +50,7 @@ html {
         bottom: 0;
         width: 3px;
         margin-left: 3px;
-        border: 5px solid #35558a;
+        border: 5px solid #ac7e00;
         border-top: none;
         border-bottom: none; }
     .product-portfolio__title ul {
@@ -69,7 +69,8 @@ html {
       margin: 0 10px;
       border-right: 1px solid rgba(0, 0, 0, 0.7); }
     .product-portfolio__title li:hover {
-      color: #6a8cc3; }
+      color: #c0920b;
+      font-weight: bold; }
   .product-portfolio__detail {
     padding: 20px;
     padding-top: 0;
@@ -417,14 +418,14 @@ html {
 
 .header {
   position: relative;
-  background-image: repeating-linear-gradient(15deg, rgba(106, 140, 195, 0.5), rgba(53, 85, 138, 0.5) 2%, rgba(106, 140, 195, 0.5) 5%);
+  background-image: repeating-linear-gradient(15deg, rgba(242, 196, 61, 0.5), rgba(172, 126, 0, 0.5) 2%, rgba(242, 196, 61, 0.5) 5%);
   z-index: 999; }
   .header.fixed {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-image: repeating-linear-gradient(15deg, #6a8cc3, #35558a 2%, #6a8cc3 5%); }
+    background-image: repeating-linear-gradient(15deg, #f2c43d, #ac7e00 2%, #f2c43d 5%); }
     .header.fixed #menu-bars {
       color: #fff; }
     .header.fixed .header__banner {
@@ -444,13 +445,13 @@ html {
   .header__banner-title {
     font-size: 3.4rem;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-    color: #35558a; }
+    color: #ac7e00; }
   .header__banner-sub {
     font-size: 2.6rem; }
 
 .footer {
   padding: 20px;
-  background-color: #35558a;
+  background-color: #ac7e00;
   color: #fff;
   font-size: 1.6rem; }
   .footer__company {
@@ -498,9 +499,9 @@ html {
   left: 0;
   right: 0;
   font-size: 1.6rem;
-  background: #6a8cc3;
+  background: #f2c43d;
   color: #fff;
-  box-shadow: 0 -5px 15px #35558a; }
+  box-shadow: 0 -5px 15px #ac7e00; }
   @media (min-width: 64em) {
     .navbar {
       position: relative;
@@ -513,18 +514,17 @@ html {
       .navbar__list {
         display: flex;
         flex-direction: row;
-        width: 80%;
         padding: 0 10px; } }
   .navbar__item {
     position: relative;
     flex-grow: 1;
     text-align: center;
     cursor: pointer;
-    border-left: 2px solid #35558a; }
+    border-left: 2px solid #ac7e00; }
     .navbar__item:last-child {
-      border-right: 2px solid #35558a; }
+      border-right: 2px solid #ac7e00; }
     .navbar__item:hover, .navbar .sub-menu li:hover {
-      box-shadow: inset 0 0 25px #35558a; }
+      box-shadow: inset 0 0 25px #ac7e00; }
       .navbar__item:hover .sub-menu, .navbar .sub-menu li:hover .sub-menu {
         -webkit-transform: scaleY(1);
         -ms-transform: scaleY(1);
@@ -532,8 +532,11 @@ html {
   .navbar__link {
     display: block;
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 46px; }
+    @media (min-width: 64em) {
+      .navbar__link {
+        font-size: 0.9em; } }
     .navbar__link .icon-custom {
       margin-left: 5px; }
   .navbar .sub-menu {
@@ -549,8 +552,10 @@ html {
     z-index: 1;
     transform-origin: top left;
     transition: all ease-in-out 0.2s; }
-    .navbar .sub-menu li:not(:last-child) {
-      border-bottom: 2px solid rgba(0, 0, 0, 0.4); }
+    .navbar .sub-menu li {
+      min-width: 160px; }
+      .navbar .sub-menu li:not(:last-child) {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.4); }
     .navbar .sub-menu a {
       padding: 8px 15px;
       text-align: left;
@@ -641,7 +646,7 @@ html {
     text-transform: uppercase;
     text-align: center; }
     .product__title a:hover {
-      color: #6a8cc3; }
+      color: #f2c43d; }
   .product__describe {
     font-size: 1.4rem;
     text-align: justify;
@@ -655,7 +660,7 @@ html {
 #hot-products .title {
   margin-bottom: 20px;
   font-size: 2.8rem;
-  color: #6a8cc3;
+  color: #f2c43d;
   text-align: center;
   text-transform: uppercase; }
   #hot-products .title h4 {
@@ -670,12 +675,12 @@ html {
     font-size: 2.8rem;
     text-align: center;
     text-transform: uppercase;
-    color: #6a8cc3; }
+    color: #f2c43d; }
   .detail-product__info {
     margin-left: 25px; }
   .detail-product__title-product {
     padding: 10px 0;
-    color: #35558a;
+    color: #ac7e00;
     text-transform: uppercase;
     font-size: 2.3rem; }
 

@@ -38,7 +38,6 @@
 
     @include screen('pc') {
       @include flex(row);
-      width: 80%;
       padding: 0 10px;
     }
   }
@@ -71,8 +70,12 @@
     display: block;
 
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 46px;
+
+    @include screen('pc') {
+      font-size: 0.9em;
+    }
 
     .icon-custom {
       margin-left: 5px;
@@ -97,6 +100,8 @@
     transition: all ease-in-out 0.2s;
 
     li {
+      min-width: 160px;
+
       &:not(:last-child) {
         border-bottom: 2px solid rgba($color-black, 0.4);
       }
