@@ -51,6 +51,23 @@
     letter-spacing: 1.8px;
   }
 
+  &__banner-contact {
+    padding: 10px 0;
+  }
+
+  .banner-contact {
+    @include flex(row, center, center);
+    font-size: 1.6rem;
+
+    &__item {
+      padding: 0 10px;
+
+      a {
+        margin-left: 5px;
+      }
+    }
+  }
+
   &__banner-title {
     font-size: 3.4rem;
 

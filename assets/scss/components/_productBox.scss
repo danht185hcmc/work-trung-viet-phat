@@ -5,13 +5,39 @@
   &__img {
     @include border-radius(5px);
 
+    position: relative;
     display: block;
+
     margin-bottom: 10px;
     padding: 5px;
-    height: 200px;
+    height: 325px;
 
     border: 1px solid rgba($color-black, 0.3);
     box-shadow: 3px 3px 5px rgba($color-black, 0.3);
+    overflow: hidden;
+
+    &::before {
+      content: 'ximatrungvietphat.com';
+      bottom: 28px;
+    }
+
+    &::after {
+      content: 'Hotline: 0933 112 369';
+      bottom: 0;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+
+      left: 0;
+      right: 0;
+      padding: 2px 5px;
+
+      font-weight: 600;
+      background-color: rgba($color-primary, 0.8);
+      z-index: 1;
+    }
 
     &:hover {
       img {

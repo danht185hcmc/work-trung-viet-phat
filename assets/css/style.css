@@ -442,6 +442,18 @@ html {
     text-transform: uppercase;
     word-spacing: 1.5px;
     letter-spacing: 1.8px; }
+  .header__banner-contact {
+    padding: 10px 0; }
+  .header .banner-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem; }
+    .header .banner-contact__item {
+      padding: 0 10px; }
+      .header .banner-contact__item a {
+        margin-left: 5px; }
   .header__banner-title {
     font-size: 3.4rem;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
@@ -618,12 +630,28 @@ html {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    position: relative;
     display: block;
     margin-bottom: 10px;
     padding: 5px;
-    height: 200px;
+    height: 325px;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); }
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden; }
+    .product__img::before {
+      content: 'ximatrungvietphat.com';
+      bottom: 28px; }
+    .product__img::after {
+      content: 'Hotline: 0933 112 369';
+      bottom: 0; }
+    .product__img::before, .product__img::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: 2px 5px;
+      font-weight: 600;
+      background-color: rgba(242, 196, 61, 0.8);
+      z-index: 1; }
     .product__img:hover img {
       transform: scale(1.1); }
     @media (min-width: 46.25em) {
