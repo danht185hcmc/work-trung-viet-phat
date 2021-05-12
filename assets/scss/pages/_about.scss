@@ -1,0 +1,29 @@
+.p-about {
+  &__heading {
+    font-size: 4rem;
+    color: red;
+    text-align: center;
+  }
+
+  &__heading-section {
+    font-size: 20px;
+    color: blue;
+    text-transform: uppercase;
+  }
+
+  main {
+    padding: 60px;
+  }
+
+  ul {
+    @extend %reset-list;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+}

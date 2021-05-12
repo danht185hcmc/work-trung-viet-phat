@@ -1,4 +1,4 @@
-.product-portfolio__title ul, .product-portfolio__detail, .navbar__list, .navbar .sub-menu {
+.product-portfolio__title ul, .product-portfolio__detail, .navbar__list, .navbar .sub-menu, .p-about ul {
   list-style: none; }
 
 .product-portfolio__title a, .navbar__link, .product__title a {
@@ -711,6 +711,25 @@ html {
     color: #ac7e00;
     text-transform: uppercase;
     font-size: 2.3rem; }
+
+.p-about__heading {
+  font-size: 4rem;
+  color: red;
+  text-align: center; }
+
+.p-about__heading-section {
+  font-size: 20px;
+  color: blue;
+  text-transform: uppercase; }
+
+.p-about main {
+  padding: 60px; }
+
+.p-about li {
+  margin-bottom: 15px; }
+
+.p-about p {
+  font-size: 1.8rem; }
 
 .bg-light-gray {
   background-color: lightgray; }
